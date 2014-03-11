@@ -1,0 +1,22 @@
+.breadcrumb {
+	padding-left: 0;
+	padding-right: 0;
+	}
+	
+.breadcrumb ol {
+	border-radius: 0;
+	list-style: none;
+	margin-bottom: 0;
+	padding: 0;
+	}
+	
+.breadcrumb li {
+	display: inline-block;
+	font-size: 0.9em;
+	}
+	
+.breadcrumb li+li:before {
+	color: #ccc;
+	content: "/\00a0";
+	padding: 0 5px;
+	}

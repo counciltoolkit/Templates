@@ -1,0 +1,35 @@
+.guide .menu-link {
+	display: block;
+	margin-bottom: 10px;
+	@include respond-min(48em) {
+		display: none;
+		}
+	}
+
+.guide-steps {
+	border: 3px solid #ddd;
+	font-size: 0.9em;
+	margin-bottom: 2em;
+	margin-top: 2em;
+	padding: 1em 1em 0.5em 3em;
+	@include respond-min(60em) {
+		width: 60%;
+		}
+	}
+	
+.js .guide-steps {
+	display: none;
+	@include respond-min(48em) {
+		display: block;
+		}
+	}
+	
+.js .guide-steps.show {
+	display: block;
+	}
+	
+.guide-steps .active {
+	border: 0;
+	color: #333;
+	text-decoration: none;
+	}

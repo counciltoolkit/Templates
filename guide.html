@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<!--[if lte IE 7 ]><html lang="en" class="old"><![endif]-->
+<!--[if IE 8 ]><html lang="en" class="ie8"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+
+	<head>
+
+		<meta charset="utf-8" />
+
+		<title>[TITLE]</title>
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="cleartype" content="on">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<meta name="apple-mobile-web-app-title" content="[TITLE]">
+		<meta name="description" content="[DESCRIPTION]" />
+		<meta property="og:title" content="[TITLE]" />
+		<meta property="og:description" content="[DESCRIPTION]" />
+		
+		<script>
+            if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+	            var msViewportStyle = document.createElement("style");
+	            msViewportStyle.appendChild(
+	            	document.createTextNode(
+	            		"@-ms-viewport{width:auto!important}"
+	            	)
+	            );
+	            document.getElementsByTagName("head")[0].
+	            appendChild(msViewportStyle);
+	        }
+		</script>
+		
+		<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+		
+		<!--[if ! lte IE 8]><!-->
+			<link rel="stylesheet" media="not print" href="/css/style.css" />
+		<!--<![endif]-->
+		
+		<!--[if lte IE 8]>
+			<link rel="stylesheet" media="screen" href="/css/legacy.css" />
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		  				
+		<link rel="shortcut icon" href="/images/icons/favicon.ico" />
+		<link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png" />
+		<link rel="apple-touch-icon-precomposed" href="/images/icons/apple-touch-icon.png" />
+		
+	</head>
+
+	<body>
+	
+		<a href="#" class="sr-only skip-link" tabindex="1">Accessibility</a>
+	
+		<a href="#content" class="sr-only skip-link" tabindex="2">Skip to main content</a>
+		
+		<a href="#secondary-nav" class="sr-only skip-link" tabindex="3">Skip to secondary navigation</a>
+
+		<div class="navbar navbar-inverse" role="navigation">
+			
+			<div class="container">
+			
+				<div class="row">
+				
+					<div class="navbar-header col-xs-5 col-sm-3">
+						
+						<a class="navbar-brand" href="/">Council Name</a>
+						
+					</div>
+					
+					<div class="login-register col-xs-7 col-sm-4">
+						
+						<ul>
+							
+							<li><a href="#" class="btn btn-default">Register</a></li>
+							<li><a href="#" class="login btn btn-link">Log in</a></li>
+							
+						</ul>
+						
+					</div>
+					
+					<form class="main-search col-xs-12 col-sm-5" role="form">
+						
+						<label class="sr-only" for="mainsearch">Search</label>
+						<input type="search" class="form-control" id="mainsearch" placeholder="eg. council tax, benefits&hellip;">
+						
+						<button type="submit" class="btn btn-primary">Search</button>
+						
+					</form>
+					
+				</div>
+		
+			</div>
+			
+		</div>
+		
+		<section class="breadcrumb">
+		
+			<div class="container">
+		
+				<ol>
+				  	<li><a href="#">Home</a></li>
+				  	<li><a href="#">Category</a></li>
+				  	<li><a href="#">Sub-category</a></li>
+				  	<li class="active">Guide title</li>
+				</ol>
+				
+			</div>
+			
+		</section>
+		
+		<div class="container">
+		
+			<div class="row">
+			
+				<article id="content" class="article col-sm-9 col-md-8">
+				
+					<h1>Guide title</h1>
+					
+					<div class="guide">
+					
+						<ol class="guide-steps clearfix" role="tablist">
+						        
+					        <li><a href="#section-one" id="tab1" aria-controls="panel1" aria-selected="false" role="tab">Section 1 title</a></li>
+			                <li><a href="#section-two" aria-controls="panel2" id="tab2" aria-selected="false" role="tab">Section 2 title</a></li>
+			                <li><a href="#section-three" id="tab3" aria-controls="panel3" aria-selected="false" role="tab">Section 3 title</a></li>
+			                <li><a href="#section-four" id="tab4" aria-controls="panel3" aria-selected="false" role="tab">Section 4 title</a></li>
+
+			                
+					    </ol>
+					    
+					    <div id="section-one" class="tab" role="tabpanel" aria-labelledby="tab1" aria-hidden="false">
+					    
+					        <h2 class="jsTabTitle">Section 1 title</h2>
+					
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum porttitor neque, eget eleifend libero tincidunt ultrices. Vivamus vitae lacus erat. Sed sed enim mi. Morbi massa turpis, consequat non semper in, dapibus et neque. Praesent a vehicula augue.</p>
+							
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum porttitor neque, eget eleifend libero tincidunt ultrices. Vivamus vitae lacus erat. Sed sed enim mi. Morbi massa turpis, consequat non semper in, dapibus et neque. Praesent a vehicula augue. Sed tortor nulla, blandit sed blandit id, blandit ac justo. Nam semper nulla non tellus pellentesque nec porta magna adipiscing. Maecenas venenatis, leo nec placerat consectetur, magna leo luctus nisi, id faucibus augue felis nec leo.</p>
+					        
+					    </div>
+					    
+					    <div id="section-two" class="tab" role="tabpanel" aria-labelledby="tab2" aria-hidden="false">
+					        
+					        <h2 class="jsTabTitle">Section 2 title</h2>
+					
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum porttitor neque, eget eleifend libero tincidunt ultrices. Vivamus vitae lacus erat. Sed sed enim mi. Morbi massa turpis, consequat non semper in, dapibus et neque. Praesent a vehicula augue. Nam semper nulla non tellus pellentesque nec porta magna adipiscing. Maecenas venenatis, leo nec placerat consectetur, magna leo luctus nisi, id faucibus augue felis nec leo.</p>
+							
+							<p>Morbi massa turpis, consequat non semper in, dapibus et neque. Praesent a vehicula augue. Sed tortor nulla, blandit sed blandit id, blandit ac justo. Nam semper nulla non tellus pellentesque nec porta magna adipiscing. Maecenas venenatis, leo nec placerat consectetur, magna leo luctus nisi, id faucibus augue felis nec leo.</p>
+							
+					    </div>
+					    
+					    <div id="section-three" class="tab" role="tabpanel" aria-labelledby="tab3" aria-hidden="false">
+					        
+					        <h2 class="jsTabTitle">Section 3 title</h2>
+					
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum porttitor neque, eget eleifend libero tincidunt ultrices. Vivamus vitae lacus erat. Sed sed enim mi.</p>
+							
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum porttitor neque, eget eleifend libero tincidunt ultrices. Vivamus vitae lacus erat. Sed sed enim mi. Morbi massa turpis, consequat non semper in, dapibus et neque. Maecenas venenatis, leo nec placerat consectetur, magna leo luctus nisi, id faucibus augue felis nec leo.</p>
+							
+					    </div>
+					    
+					    <div id="section-four" class="tab" role="tabpanel" aria-labelledby="tab4" aria-hidden="false">
+					        
+					        <h2 class="jsTabTitle">Section 4 title</h2>
+					
+							<p>Nam semper nulla non tellus pellentesque nec porta magna adipiscing. Maecenas venenatis, leo nec placerat consectetur, magna leo luctus nisi, id faucibus augue felis nec leo.</p>
+							
+							<p>Vivamus vitae lacus erat. Sed sed enim mi. Morbi massa turpis, consequat non semper in, dapibus et neque. Praesent a vehicula augue. Sed tortor nulla, blandit sed blandit id, blandit ac justo. Nam semper nulla non tellus pellentesque nec porta magna adipiscing. Maecenas venenatis, leo nec placerat consectetur, magna leo luctus nisi, id faucibus augue felis nec leo.</p>
+							
+					    </div>
+
+					    <ul class="jsPrevNextContainer pager clearfix"></ul>
+					    
+					</div>
+									
+					<div class="other-actions">
+					
+						<div class="clearfix">
+				
+							<section class="sharing clearfix no-external">
+								
+								<div class="share share-facebook">
+									<a target="_blank" class="icon-facebook-rect" href="http://www.facebook.com/sharer/sharer.php?u=[this url]"><span class="away">Share on Facebook</span></a>
+								</div>
+					
+								<div class="share share-twitter">
+									<a target="_blank" class="icon-twitter-bird" href="https://twitter.com/share"><span class="away">Share on Twitter</span></a>
+								</div>
+					
+								<div class="share share-google">
+									<a target="_blank" class="icon-googleplus-rect" href="https://plusone.google.com/_/+1/confirm?hl=en&url=[this url]"><span class="away">Share on Google+</span></a>
+								</div>
+								
+								<div class="share share-linkedin">
+									<a target="_blank" class="icon-linkedin-rect" href="http://www.linkedin.com/shareArticle?mini=true&url=[this url]&title=[page title]&summary=[meta description]&source=City%20of%20Edinburgh%20Council"><span class="away">Share on LinkedIn</span></a>
+								</div>
+								
+								<div class="share share-mail">
+									<a target="_blank" class="icon-mail" href="#"><span class="away">Share by email</span></a>
+								</div>
+								
+							</section>			
+							
+						</div>
+			
+						<section id="feedback" class="js-feedback">
+							
+							<form>
+							
+								<h2>Help us improve edinburgh.gov.uk</h2>
+				
+								<ul>
+									
+									<li>
+									
+										<div class="form-group">
+											<label for="page-comment">Comments about this page</label>
+											<input type="text" id="page-comment" name="page-comment" class="form-control" />
+										</div>
+
+									</li>
+									
+									<li>
+									
+										<div class="form-group">
+											<label for="comment-email">Email</label>
+											<input type="email" id="comment-email" name="comment-email" class="form-control" />
+										</div>
+
+										<p class="field-explanation">City of Edinburgh Council will only use this email address  to respond to any issues raised.</p>
+										
+									</li>
+									
+								</ul>
+					
+								<button class="btn btn-primary">Send feedback</button>
+					
+							</form>
+				
+						</section>
+		
+					</div>
+					
+				</article>
+				
+				<aside id="secondary-nav" class="sidebar col-sm-3 col-md-3 col-md-offset-1">
+				
+					<h2>More from [category title]</h2>
+				
+					<div class="list-group">
+						<a href="#" class="list-group-item">Cras justo odio</a>
+						<a href="#" class="list-group-item active">Dapibus ac facilisis in</a>
+						<a href="#" class="list-group-item">Morbi leo risus</a>
+						<a href="#" class="list-group-item">Porta ac consectetur ac</a>
+						<a href="#" class="list-group-item">Vestibulum at eros</a>
+			        </div>
+          
+				</aside>
+				
+			</div>
+		
+		</div>		
+					
+		<div class="container">
+			
+			<hr>
+	
+			<footer>
+				
+				<p>
+				
+					A <a href="http://stormid.com">Storm ID</a> experiment.
+					
+					<span xmlns:dct="http://purl.org/dc/terms/">
+					  <a rel="license"
+					     href="http://creativecommons.org/publicdomain/zero/1.0/">
+					    <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
+					  </a>
+					</span>
+
+				</p> 
+				
+			</footer>
+			
+		</div>
+
+		<script>
+			(function () {
+				var js;
+				if (typeof JSON !== 'undefined' && 'querySelector' in document && 'addEventListener' in window) {
+					js = '//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js';
+				} else {
+					js = '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js';
+				}
+				document.write('<script src="' + js + '"><\/script>');
+			}());
+			
+		</script>
+		
+		<script>!window.jQuery && document.write('<script src="/js/libs/jquery-1.11.0.min.js"><\/script>')</script>
+		
+		<script src="/bootstrap/js/bootstrap.min.js"></script>
+
+		<script src="/js/core.js"></script>
+
+		<!-- BEGIN CONTENT TYPE TEMPLATES ONLY -->
+		
+		<script>
+			$('.sharing').after('<p class="feedback-link"><a href="javascript:void(0)" class="js-feedback-toggle">Is there anything wrong with this page?</a></p>');
+			$('.js-feedback-toggle').click(function () {
+				$('.js-feedback').toggleClass('show');
+	  		});
+		</script>
+		
+		<script src="/js/libs/share.min.js"></script>
+		
+		<script>
+			$('.sharing').share()
+		</script>
+		
+		<!-- END CONTENT TYPE TEMPLATES ONLY -->
+		
+		<!-- BEGIN GUIDE TEMPLATE ONLY -->
+		
+		<script src="/js/guides.js"></script>
+		
+		<!-- END GUIDE TEMPLATE ONLY -->
+		
+		<!-- BEGIN CONTENT TYPE TEMPLATES WITH TABLES ONLY -->
+		
+		<script>
+			$(window).on('load', function() {
+				$('table').each(function() {
+					var element = $(this);
+					var scrollWrapper = $('<div />', {
+						'class': 'scrollable',
+						'html': '<div />'
+					}).insertBefore(element);
+					element.data('scrollWrapper', scrollWrapper);
+					element.appendTo(scrollWrapper.find('div'));
+					if (element.outerWidth() > element.parent().outerWidth()) {
+						element.data('scrollWrapper').addClass('has-scroll');
+					}
+					$(window).on('resize orientationchange', function() {
+						if (element.outerWidth() > element.parent().outerWidth()) {
+							element.data('scrollWrapper').addClass('has-scroll');
+						} else {
+							element.data('scrollWrapper').removeClass('has-scroll');
+						}
+					});
+				});
+			});
+		</script>
+		
+		<!-- END CONTENT TYPE TEMPLATES WITH TABLES ONLY -->
+		
+		<script src="/js/libs/jquery.fitvids.js"></script>
+		<script>
+			$(document).ready(function(){
+		    	// Target your .container, .wrapper, .post, etc.
+				$(".article").fitVids();
+			});
+		</script>
+		
+	</body>
+
+</html>

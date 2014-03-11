@@ -1,0 +1,267 @@
+.article .intro {
+	font-size: 1.2em;
+	} 
+	
+.article > h2:first-child {
+	margin-top: 0;
+	}
+ 
+.article ol, 
+.article ul {
+	margin-bottom: 1em;
+	}
+	
+.article li {
+	margin-bottom: 0.5em;
+	}
+
+.article ul li {
+	list-style-type: disc;
+	}
+	
+.article img {
+	height: auto;
+	margin-bottom: 2em;
+	margin-top: 1em;
+	width: 100%;
+	}
+	
+.article img.pic-right, 
+.article img.pic-left {
+	@include respond-min(35em) { 
+		margin-bottom: 1em;
+		width: 48%;
+		}
+	}
+
+.article img.pic-right {
+	@include respond-min(35em) {
+		float: right;
+		margin-left: 4%;
+		}
+	}
+	
+.article img.pic-left {
+	@include respond-min(35em) {
+		float: left;
+		margin-right: 4%;
+		}
+	}
+	
+.article .video-container {
+	margin-bottom: 2em;
+	margin-top: 2em;
+	}
+	
+.article .embed-widget iframe {
+	margin-bottom: 1.5em;
+	}
+	
+.scrollable {
+	margin-bottom: 2em;
+    margin-top: 2em;
+    max-width: 100%;
+    overflow-x: auto;
+	}
+	
+.scrollable table {
+	margin: 0;
+	}
+	
+.scrollable.has-scroll {
+	overflow: hidden;
+    position: relative;
+	}
+	
+.scrollable.has-scroll:after {
+	border-radius: 10px 0 0 10px / 50% 0 0 50%;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.25);
+    content:'';
+	left: 100%; 
+    height: 100%;
+	position: absolute;
+    top: 0;
+    width: 50px;
+	}
+	
+.scrollable.has-scroll > div {
+    overflow-x:auto;
+	}
+
+.scrollable > div::-webkit-scrollbar {
+    height:12px;
+	}
+	
+.scrollable > div::-webkit-scrollbar-track {
+    background:#f0f0f0;
+    @include box-shadow(inset 0 0 2px rgba(0,0,0,0.15));
+	}
+	
+.scrollable > div::-webkit-scrollbar-thumb {
+	background:#ccc;
+    border-radius:6px;
+	}
+	
+.address, 
+.contact, 
+.form-download, 
+.advisory, 
+.help-notice, 
+.info-notice, 
+.example {
+	border: 1px solid #ddd;
+	font-size: 1.2em;
+	margin-bottom: 2em;
+	margin-top: 2em;
+	padding: 1em;
+	position: relative;
+	}
+	
+.address, 
+.contact, 
+.form-download, 
+.advisory, 
+.help-notice, 
+.info-notice, 
+.example {
+	.glyphicon {
+		margin-right: 0.3em;
+		}
+	}
+	
+.address *:last-child, 
+.contact *:last-child, 
+.form-download *:last-child, 
+.advisory *:last-child, 
+.help-notice *:last-child, 
+.info-notice *:last-child, 
+.example *:last-child {
+	margin-bottom: 0;
+	}
+	
+.advisory {
+	background: #FEEFB3;
+	border-color: darken(#FEEFB3, 30%);
+	}
+	
+.info-notice {
+	background: #BEDEE6;
+	border-color: darken(#BEDEE6, 30%);
+	}
+
+.example h2 {
+	font-size: 1.2em;
+	margin-top: 0;
+	}
+	
+.govspeak.external .address {
+	margin-top: 3em;
+	}
+	
+.button.signpost {
+	margin-bottom: 0.5em;
+	margin-right: 0.5em;
+	}
+	
+.signpost-endpoint {
+	display: inline-block;
+	font-size: 0.9em;
+	}
+	
+.external-links li a span {
+	color: #333;
+	font-size: 0.8em;
+	}
+	
+.other-actions {
+	border-top: 1px solid #ddd;
+	margin-top: 2em;
+	padding-top: 1em;
+	@include respond-min(44em) {
+		margin-top: 3em;
+		padding: 2em 0 1em 0;
+		}
+	}
+	
+.sharing {
+	height: 35px;
+	margin-top: 1em;
+	}
+	
+.js .sharing, 
+.feedback-link {
+	display: inline-block;
+	margin-bottom: 2em;
+	margin-right: 2em;
+	}
+	
+.sharing h2 {
+	font-size: 1.2em;
+	@include respond-min(35em) {
+		float: left;
+		margin: 0.2em 1.5em 0 0;
+		}
+	@include respond-min(50em) {
+		margin-right: 2em;
+		}
+	@include respond-min(70em) {
+		float: left;
+		margin-top: 0.3em;
+		}
+	}
+	
+.share {
+	float: left;
+	font-size: 1.1em;
+	margin: 0 1.5em 1em 0;
+	@include respond-min(50em) {
+		margin-right: 2em;
+		}
+	}
+	
+.share:last-child {
+	margin-right: 0;
+	}
+	
+.share a, 
+.share a:hover, 
+.share a:focus {
+	border: 0;
+	}
+	
+.share-facebook a {
+	color: #3b5997;
+	}
+	
+.share-twitter a {
+	color: #00b5f0;
+	}
+	
+.share-google a {
+	color: #dc4b39;
+	}
+	
+.share-linkedin a {
+	color: #1B86BC;
+	}
+	
+.feedback-link {
+	font-size: 0.9em;
+	margin-top: 1em;
+	}
+	
+.js .js-feedback {
+	display: none;
+	}
+	
+.js .js-feedback.show {
+	display: block;
+	}
+	
+.other-actions ul {
+	padding-left: 0;
+	}
+	
+.other-actions ul li {
+	list-style-type: none;
+	}

@@ -1,0 +1,61 @@
+html,
+body,
+button,
+input,
+select,
+textarea,
+.standard-type {
+	font-family: 'Open Sans', Verdana, sans-serif;
+	line-height: 1.6; 
+	}
+	
+body:after, 
+.sizer {
+	content: 'small';
+	display: none! important;
+	height: 0;
+	width: 0;
+	@include respond-min(48em) {
+		content: 'large';
+		}
+	}
+
+a {
+	-moz-transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	}
+	
+a:hover, 
+a:focus {
+	
+	}
+	
+h1, 
+h2, 
+.btn, 
+.navbar-brand {
+	font-family: 'Source Sans Pro', Verdana, sans-serif;
+	font-weight: bold;
+	}
+	
+h1 {
+	@include respond-max(50em) {
+		margin-top: 0px;
+		}
+	}
+	
+.no-orphans {
+	display: inline-block;
+	}
+	
+.sr-only:focus {
+	background: #fff;
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	padding: 0.5em;
+	width: auto;
+	z-index: 999;
+	}
