@@ -136,24 +136,26 @@
 				
 							<section class="sharing clearfix no-external">
 								
+								<h2>Share this information</h2>
+								
 								<div class="share share-facebook">
-									<a target="_blank" class="icon-facebook-rect" href="http://www.facebook.com/sharer/sharer.php?u=[this url]"><span class="away">Share on Facebook</span></a>
+									<a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=[this url]"><span class="fa fa-facebook-square fa-lg"></span><span class="sr-only"> Share on Facebook</span></a>
 								</div>
 					
 								<div class="share share-twitter">
-									<a target="_blank" class="icon-twitter-bird" href="https://twitter.com/share"><span class="away">Share on Twitter</span></a>
+									<a target="_blank" href="https://twitter.com/share"><span class="fa fa-twitter fa-lg"></span><span class="sr-only"> Share on Twitter</span></a>
 								</div>
 					
 								<div class="share share-google">
-									<a target="_blank" class="icon-googleplus-rect" href="https://plusone.google.com/_/+1/confirm?hl=en&url=[this url]"><span class="away">Share on Google+</span></a>
+									<a target="_blank" href="https://plusone.google.com/_/+1/confirm?hl=en&url=[this url]"><span class="fa fa-google-plus fa-lg"></span><span class="sr-only"> Share on Google+</span></a>
 								</div>
 								
 								<div class="share share-linkedin">
-									<a target="_blank" class="icon-linkedin-rect" href="http://www.linkedin.com/shareArticle?mini=true&url=[this url]&title=[page title]&summary=[meta description]&source=City%20of%20Edinburgh%20Council"><span class="away">Share on LinkedIn</span></a>
+									<a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=[this url]&title=[page title]&summary=[meta description]&source=City%20of%20Edinburgh%20Council"><span class="fa fa-linkedin-square fa-lg"></span><span class="sr-only"> Share on LinkedIn</span></a>
 								</div>
 								
 								<div class="share share-mail">
-									<a target="_blank" class="icon-mail" href="#"><span class="away">Share by email</span></a>
+									<a target="_blank" href="#"><span class="fa fa-envelope fa-lg"></span><span class="sr-only"> Share by email</span></a>
 								</div>
 								
 							</section>			
@@ -373,16 +375,10 @@
 		<!-- BEGIN CONTENT TYPE TEMPLATES ONLY -->
 		
 		<script>
-			$('.sharing').after('<p class="feedback-link"><a href="javascript:void(0)" class="js-feedback-toggle">Is there anything wrong with this page?</a></p>');
+			$('#feedback').before('<p class="feedback-link"><a href="javascript:void(0)" class="js-feedback-toggle">Is there anything wrong with this page?</a></p>');
 			$('.js-feedback-toggle').click(function () {
 				$('.js-feedback').toggleClass('show');
 	  		});
-		</script>
-		
-		<script src="counciltoolkit/js/libs/share.min.js"></script>
-		
-		<script>
-			$('.sharing').share()
 		</script>
 		
 		<!-- END CONTENT TYPE TEMPLATES ONLY -->
