@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<!--[if lte IE 7 ]><html lang="en" class="old"><![endif]-->
+<!--[if IE 8 ]><html lang="en" class="ie8"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+
+	<head>
+
+		<meta charset="utf-8" />
+
+		<title>Templates index</title>
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="cleartype" content="on">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<meta name="apple-mobile-web-app-title" content="[TITLE]">
+		<meta name="description" content="[DESCRIPTION]" />
+		<meta property="og:title" content="[TITLE]" />
+		<meta property="og:description" content="[DESCRIPTION]" />
+		
+		<script>
+            if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+	            var msViewportStyle = document.createElement("style");
+	            msViewportStyle.appendChild(
+	            	document.createTextNode(
+	            		"@-ms-viewport{width:auto!important}"
+	            	)
+	            );
+	            document.getElementsByTagName("head")[0].
+	            appendChild(msViewportStyle);
+	        }
+		</script>
+		
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+		
+		<!--[if ! lte IE 8]><!-->
+			<link rel="stylesheet" media="not print" href="css/style.css" />
+		<!--<![endif]-->
+		
+		<!--[if lte IE 8]>
+			<link rel="stylesheet" media="screen" href="css/legacy.css" />
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		  				
+		<link rel="shortcut icon" href="images/icons/favicon.ico" />
+		<link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png" />
+		<link rel="apple-touch-icon-precomposed" href="images/icons/apple-touch-icon.png" />
+		
+	</head>
+
+	<body>
+	
+		<ul class="list-group">
+		
+			<li class="list-group-item"><a href="home.html">Home</a></li>
+			<li class="list-group-item"><a href="category.html">Category</a></li>
+			<li class="list-group-item"><a href="categorywithwidget.html">Category with widget</a></li>
+			<li class="list-group-item"><a href="subcategory.html">Sub-category</a></li>
+			<li class="list-group-item"><a href="article.html">Article</a></li>
+			<li class="list-group-item"><a href="guide.html">Guide</a></li>
+			<li class="list-group-item"><a href="signpost.html">Signpost</a></li>
+			<li class="list-group-item"><a href="generic.html">Generic content</a></li>
+			<li class="list-group-item"><a href="searchresults.html">Search results</a></li>
+			<li class="list-group-item"><a href="atoz.html">A to Z</a></li>
+			<li class="list-group-item"><a href="contact.html">Contact</a></li>
+			<li class="list-group-item"><a href="homewithemergency.html">Home with emergency banner</a></li>
+			<li class="list-group-item"><a href="email.html">Email template</a></li>
+			
+		</ul>
+
+		<script>
+			(function () {
+				var js;
+				if (typeof JSON !== 'undefined' && 'querySelector' in document && 'addEventListener' in window) {
+					js = '//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js';
+				} else {
+					js = '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js';
+				}
+				document.write('<script src="' + js + '"><\/script>');
+			}());
+			
+		</script>
+		
+		<script>!window.jQuery && document.write('<script src="js/libs/jquery-1.11.0.min.js"><\/script>')</script>
+		
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+
+		<script src="js/core.js"></script>
+		
+	</body>
+
+</html>
