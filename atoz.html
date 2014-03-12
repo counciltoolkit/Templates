@@ -32,22 +32,22 @@
 	        }
 		</script>
 		
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 		
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 		
 		<!--[if ! lte IE 8]><!-->
-			<link rel="stylesheet" media="not print" href="css/style.css" />
+			<link rel="stylesheet" media="not print" href="counciltoolkit/css/style.css" />
 		<!--<![endif]-->
 		
 		<!--[if lte IE 8]>
-			<link rel="stylesheet" media="screen" href="css/legacy.css" />
+			<link rel="stylesheet" media="screen" href="counciltoolkit/css/legacy.css" />
 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		  				
-		<link rel="shortcut icon" href="images/icons/favicon.ico" />
-		<link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png" />
-		<link rel="apple-touch-icon-precomposed" href="images/icons/apple-touch-icon.png" />
+		<link rel="shortcut icon" href="counciltoolkit/images/icons/favicon.ico" />
+		<link rel="apple-touch-icon" href="counciltoolkit/images/icons/apple-touch-icon.png" />
+		<link rel="apple-touch-icon-precomposed" href="counciltoolkit/images/icons/apple-touch-icon.png" />
 		
 	</head>
 	
@@ -385,80 +385,22 @@
 		<div class="sizer"></div>
 
 		<script>
+		
 			(function () {
 				var js;
 				if (typeof JSON !== 'undefined' && 'querySelector' in document && 'addEventListener' in window) {
-					js = '//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js';
+					js = 'http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js';
 				} else {
-					js = '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js';
+					js = 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js';
 				}
 				document.write('<script src="' + js + '"><\/script>');
 			}());
 			
 		</script>
 		
-		<script>!window.jQuery && document.write('<script src="js/libs/jquery-1.11.0.min.js"><\/script>')</script>
-		
-		
-		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
-		<script src="js/core.js"></script>
-
-		<!-- BEGIN CONTENT TYPE TEMPLATES ONLY -->
-		
-		<script>
-			$('.sharing').after('<p class="feedback-link"><a href="javascript:void(0)" class="js-feedback-toggle">Is there anything wrong with this page?</a></p>');
-			$('.js-feedback-toggle').click(function () {
-				$('.js-feedback').toggleClass('show');
-	  		});
-		</script>
-		
-		<script src="js/libs/share.min.js"></script>
-		
-		<script>
-			$('.sharing').share()
-		</script>
-		
-		<!-- END CONTENT TYPE TEMPLATES ONLY -->
-		
-		<!-- BEGIN CONTENT TYPE TEMPLATES WITH TABLES ONLY -->
-		
-		<script>
-			$(window).on('load', function() {
-				$('table').each(function() {
-					var element = $(this);
-					var scrollWrapper = $('<div />', {
-						'class': 'scrollable',
-						'html': '<div />'
-					}).insertBefore(element);
-					element.data('scrollWrapper', scrollWrapper);
-					element.appendTo(scrollWrapper.find('div'));
-					if (element.outerWidth() > element.parent().outerWidth()) {
-						element.data('scrollWrapper').addClass('has-scroll');
-					}
-					$(window).on('resize orientationchange', function() {
-						if (element.outerWidth() > element.parent().outerWidth()) {
-							element.data('scrollWrapper').addClass('has-scroll');
-						} else {
-							element.data('scrollWrapper').removeClass('has-scroll');
-						}
-					});
-				});
-			});
-		</script>
-		
-		<!-- END CONTENT TYPE TEMPLATES WITH TABLES ONLY -->
-		
-		<!-- BEGIN CONTENT TYPE TEMPLATES WITH VIDEOS ONLY -->
-		
-		<script src="js/libs/jquery.fitvids.js"></script>
-		<script>
-			$(document).ready(function(){
-				$(".article").fitVids();
-			});
-		</script>
-		
-		<!-- END CONTENT TYPE TEMPLATES WITH VIDEOS ONLY -->
+		<script src="counciltoolkit/js/core.js"></script>
 		
 	</body>
 

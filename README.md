@@ -20,6 +20,11 @@ Current template list:
 - Email template
 
 
+## Adding custom CSS
+
+If you want to add your own CSS we suggest you create a new CSS file and call it from your templates. That will allow you to update these templates without any extra work. Either add your own CSS file(s) or have your Sass files compile to CSS.
+
+
 ## Adding your logo
 
 Replace 'Council name' with 

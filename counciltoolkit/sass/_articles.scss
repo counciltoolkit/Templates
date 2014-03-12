@@ -184,15 +184,10 @@
 	}
 	
 .sharing {
-	height: 35px;
-	margin-top: 1em;
-	}
-	
-.js .sharing, 
-.feedback-link {
 	display: inline-block;
 	margin-bottom: 2em;
 	margin-right: 2em;
+	margin-top: 1em;
 	}
 	
 .sharing h2 {
@@ -213,7 +208,7 @@
 .share {
 	float: left;
 	font-size: 1.1em;
-	margin: 0 1.5em 1em 0;
+	margin: 0 1.5em 0 0;
 	@include respond-min(50em) {
 		margin-right: 2em;
 		}
@@ -247,7 +242,7 @@
 	
 .feedback-link {
 	font-size: 0.9em;
-	margin-top: 1em;
+	margin-bottom: 3em;
 	}
 	
 .js .js-feedback {

@@ -32,22 +32,24 @@
 	        }
 		</script>
 		
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+		
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 		
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 		
 		<!--[if ! lte IE 8]><!-->
-			<link rel="stylesheet" media="not print" href="css/style.css" />
+			<link rel="stylesheet" media="not print" href="counciltoolkit/css/style.css" />
 		<!--<![endif]-->
 		
 		<!--[if lte IE 8]>
-			<link rel="stylesheet" media="screen" href="css/legacy.css" />
+			<link rel="stylesheet" media="screen" href="counciltoolkit/css/legacy.css" />
 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		  				
-		<link rel="shortcut icon" href="images/icons/favicon.ico" />
-		<link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png" />
-		<link rel="apple-touch-icon-precomposed" href="images/icons/apple-touch-icon.png" />
+		<link rel="shortcut icon" href="counciltoolkit/images/icons/favicon.ico" />
+		<link rel="apple-touch-icon" href="counciltoolkit/images/icons/apple-touch-icon.png" />
+		<link rel="apple-touch-icon-precomposed" href="counciltoolkit/images/icons/apple-touch-icon.png" />
 		
 	</head>
 
@@ -424,24 +426,26 @@
 				
 							<section class="sharing clearfix no-external">
 								
+								<h2>Share this information</h2>
+								
 								<div class="share share-facebook">
-									<a target="_blank" class="icon-facebook-rect" href="http://www.facebook.com/sharer/sharer.php?u=[this url]"><span class="away">Share on Facebook</span></a>
+									<a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=[this url]"><span class="fa fa-facebook-square fa-lg"></span><span class="sr-only"> Share on Facebook</span></a>
 								</div>
 					
 								<div class="share share-twitter">
-									<a target="_blank" class="icon-twitter-bird" href="https://twitter.com/share"><span class="away">Share on Twitter</span></a>
+									<a target="_blank" href="https://twitter.com/share"><span class="fa fa-twitter fa-lg"></span><span class="sr-only"> Share on Twitter</span></a>
 								</div>
 					
 								<div class="share share-google">
-									<a target="_blank" class="icon-googleplus-rect" href="https://plusone.google.com/_/+1/confirm?hl=en&url=[this url]"><span class="away">Share on Google+</span></a>
+									<a target="_blank" href="https://plusone.google.com/_/+1/confirm?hl=en&url=[this url]"><span class="fa fa-google-plus fa-lg"></span><span class="sr-only"> Share on Google+</span></a>
 								</div>
 								
 								<div class="share share-linkedin">
-									<a target="_blank" class="icon-linkedin-rect" href="http://www.linkedin.com/shareArticle?mini=true&url=[this url]&title=[page title]&summary=[meta description]&source=City%20of%20Edinburgh%20Council"><span class="away">Share on LinkedIn</span></a>
+									<a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=[this url]&title=[page title]&summary=[meta description]&source=City%20of%20Edinburgh%20Council"><span class="fa fa-linkedin-square fa-lg"></span><span class="sr-only"> Share on LinkedIn</span></a>
 								</div>
 								
 								<div class="share share-mail">
-									<a target="_blank" class="icon-mail" href="#"><span class="away">Share by email</span></a>
+									<a target="_blank" href="#"><span class="fa fa-email fa-lg"></span><span class="sr-only"> Share by email</span></a>
 								</div>
 								
 							</section>			
@@ -655,38 +659,30 @@
 		<div class="sizer"></div>
 
 		<script>
+		
 			(function () {
 				var js;
 				if (typeof JSON !== 'undefined' && 'querySelector' in document && 'addEventListener' in window) {
-					js = '//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js';
+					js = 'http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js';
 				} else {
-					js = '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js';
+					js = 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js';
 				}
 				document.write('<script src="' + js + '"><\/script>');
 			}());
 			
-		</script>
+		</script>		
 		
-		<script>!window.jQuery && document.write('<script src="js/libs/jquery-1.11.0.min.js"><\/script>')</script>
-		
-		
-		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
-		<script src="js/core.js"></script>
+		<script src="counciltoolkit/js/core.js"></script>
 
 		<!-- BEGIN CONTENT TYPE TEMPLATES ONLY -->
 		
 		<script>
-			$('.sharing').after('<p class="feedback-link"><a href="javascript:void(0)" class="js-feedback-toggle">Is there anything wrong with this page?</a></p>');
+			$('#feedback').before('<p class="feedback-link"><a href="javascript:void(0)" class="js-feedback-toggle">Is there anything wrong with this page?</a></p>');
 			$('.js-feedback-toggle').click(function () {
 				$('.js-feedback').toggleClass('show');
 	  		});
-		</script>
-		
-		<script src="js/libs/share.min.js"></script>
-		
-		<script>
-			$('.sharing').share()
 		</script>
 		
 		<!-- END CONTENT TYPE TEMPLATES ONLY -->
@@ -721,7 +717,7 @@
 		
 		<!-- BEGIN CONTENT TYPE TEMPLATES WITH VIDEOS ONLY -->
 		
-		<script src="js/libs/jquery.fitvids.js"></script>
+		<script src="http://cdn.jsdelivr.net/fitvids/1.0.3/jquery.fitvids.js"></script>
 		<script>
 			$(document).ready(function(){
 				$(".article").fitVids();
