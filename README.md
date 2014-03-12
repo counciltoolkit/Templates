@@ -1,4 +1,4 @@
-Council Tooklit Templates
+Council Toolkit Templates
 =========
 
 Just the flat HTML/CSS templates to help you get started.
