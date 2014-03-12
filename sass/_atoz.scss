@@ -1,0 +1,61 @@
+.atoz {
+	margin-top: 20px;
+	padding: 1em 0 0.5em 0;
+	@include respond-min(60em) {
+		padding-bottom: 1em;
+		}
+	}
+	
+.atoz h2 {
+	margin-top: 0;
+	@include respond-min(75em) {
+		float: left;
+		margin: 0 20px 0 0;
+		width: 20%;
+		}
+	}
+	 
+.atoz ul {
+	padding-left: 0;
+	@include respond-min(75em) {
+		float: right;
+		margin-top: 10px;
+		width: 75%;
+		}
+	}
+
+.atoz li {
+	color: darken(#ddd, 20%);
+	float: left;
+	list-style-type: none;
+	margin-bottom: 0.5em;
+	width: 11.1111111111%;
+	@include respond-min(30em) {
+		width: 7.69%;
+		}
+	@include respond-min(44em) {
+		
+		}
+	@include respond-min(60em) {
+		margin-bottom: 0;
+		width: 3.84615384615%;
+		}
+	}
+	
+.atoz li:last-child {
+	margin-right: 0;
+	}
+
+.atoz a:hover, 
+.atoz a:focus {
+	border-bottom: 1px solid #fff;
+	}
+	
+.atoz-top {
+	border-top: 1px solid #fff;
+	}
+	
+.template-atoz h1 {
+	background: 0;
+	margin-bottom: 0;
+	}

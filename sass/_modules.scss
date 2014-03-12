@@ -23,27 +23,14 @@ h2.panel-title {
 		width: 100%;
 		}
 	}
-
-ul.more {
-	padding-left: 0;
-	}
-
-.more li {
-	display: inline-block;
-	list-style-type: none;
-	}
 	
-.more li:after {
-	content: ', ';
-	}
-	
-.more li:last-child:after {
-	content: '';
-	}
-	
-.embed-widget {
+.embed-widget, 
+.embed-widget iframe {
 	width: 100% !important;
 	@include respond-max(40em) {
 		width: 90% !important;
+		}
+	@include respond-min(48em) {
+		height: 400px !important;
 		}
 	}
