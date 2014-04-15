@@ -29,6 +29,20 @@
 	margin-left: 0;
 	}
 	
+.navbar-brand, 
+.login-register a {
+	@include respond-max(22em) {
+		font-size: 0.9em; 
+		}
+	}
+	
+.login-register a {
+	@include respond-max(22em) {
+		padding-left: 5px;
+		padding-right: 5px;
+		}
+	}
+	
 .login-register {
 	float: right;
 	}
