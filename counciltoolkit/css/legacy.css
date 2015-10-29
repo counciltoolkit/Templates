@@ -76,7 +76,6 @@ h2,
 .form textarea {
   border: 1px solid #b7b7b7;
   height: 3em;
-  margin-bottom: 1em;
   padding: 0.7em;
   width: 100%;
   -moz-border-radius: 4px;
@@ -102,7 +101,6 @@ h2,
   box-shadow: none; }
 
 .form select {
-  margin-bottom: 1em;
   max-width: 100%;
   vertical-align: top; }
 
